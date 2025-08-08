@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Hidden utility */
+.hidden {
+  display: none !important;
+}
+
+/* Home Screen */
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.home-screen h1 {
+  font-size: 1.8rem;
+}
+
+/* Buttons */
+button {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* Choose Table */
+.choose-table-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.choose-table-screen h2 {
+  font-size: 1.5rem;
+}
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 15px;
+}
+.table-btn {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  background-color: white;
+  color: #4caf50;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.table-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Practice Screen */
+.practice-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.practice-screen h2 {
+  font-size: 1.5rem;
+}
+.question-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 15px;
+}
+.option-btn {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  background-color: white;
+  color: #4caf50;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.option-btn:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.option-btn.correct {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+.option-btn.wrong {
+  background-color: #e57373;
+  color: white;
+  border-color: #c62828;
+}
+#next-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#next-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Challenge Screen */
+.challenge-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.countdown {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.challenge-content .question-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.options-grid-ch {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 15px;
+}
+.timer {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}

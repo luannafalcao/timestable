@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Times Table Trainer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Home Screen -->
+  <main class="home-screen">
+    <h1>🧮 Times Table Trainer</h1>
+    <button id="practice-btn">Practice Mode</button>
+    <button id="challenge-btn">Challenge Mode</button>
+  </main>
+
+  <!-- Choose Table Screen (hidden by default) -->
+  <section class="choose-table-screen hidden">
+    <h2>Choose a Table</h2>
+    <div class="table-grid">
+      <button class="table-btn">2×</button>
+      <button class="table-btn">3×</button>
+      <button class="table-btn">4×</button>
+      <button class="table-btn">5×</button>
+      <button class="table-btn">6×</button>
+      <button class="table-btn">7×</button>
+      <button class="table-btn">8×</button>
+      <button class="table-btn">9×</button>
+      <button class="table-btn">10×</button>
+    </div>
+  </section>
+
+  <!-- Practice Questions Screen (hidden by default) -->
+  <section class="practice-screen hidden">
+    <h2>Question</h2>
+    <div class="question-text">
+      <span id="table-num">6</span> × <span id="multiplier">1</span> = ?
+    </div>
+    <div class="options-grid">
+      <button class="option-btn" id="opt1">4</button>
+      <button class="option-btn" id="opt2">5</button>
+      <button class="option-btn" id="opt3">6</button>
+      <button class="option-btn" id="opt4">7</button>
+    </div>
+    <button id="next-btn" class="hidden">Next ▶️</button>
+  </section>
+
+  <!-- Challenge Mode Screen (hidden by default) -->
+  <section class="challenge-screen hidden">
+    <h2>Challenge Mode</h2>
+    <div id="countdown" class="countdown">3</div>
+    <div class="challenge-content hidden">
+      <div class="question-text">
+        <span id="ch-table-num">2</span> × <span id="ch-multiplier">1</span> = ?
+      </div>
+      <div class="options-grid-ch">
+        <button class="option-btn" id="ch-opt1">4</button>
+        <button class="option-btn" id="ch-opt2">5</button>
+        <button class="option-btn" id="ch-opt3">6</button>
+        <button class="option-btn" id="ch-opt4">7</button>
+      </div>
+      <div class="timer">Time: <span id="timer">0</span>s</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
